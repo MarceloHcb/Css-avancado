@@ -1,41 +1,53 @@
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+        align-items: center;  
+    }
+}
+@media(max-width: 500px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .botao{        
+        width: 120px;    
+        transform: translatex(-10%);
+      }
+}
 
 @media (max-width: 376px){
     .container{
-
         flex-direction: column;
-        align-items: center;
-      
-       
-            
+        align-items: center;  
     }
-
-    .espaco-logo{
-       
+    .espaco-logo{       
         margin-bottom: 40px;
         font-size: 30px;
         font-weight: 800;
     }
-    
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     .menu ul{
         flex-direction: column;
         align-items: center;
         font-size: 40px;
-        font-weight: normal;
-       
+        font-weight: normal;      
     }
     .menu ul li{
         padding: 10px;
     }
-
-    
-    
-
-
-
-
-    button{
-
-        margin: 60px;
+    .botao{
+      transform: translatex(-10%);
     }
+}
+@media (max-width: 320px){  
+    .espaco-logo{
+        flex-direction: column;   
+      }
+
 }
