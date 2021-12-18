@@ -4,111 +4,78 @@
     background-color: #F7F7F7;
     display: grid;
     width: 656px;
-    height: 368px;
-    grid-row-gap:5px;
-    padding: 20px;
-    margin:20px auto;        
-    
+    height: 368px;   
+    padding: 15px;
+    margin:40px auto;      
     grid: 
     "video video  propaganda propaganda" 80px
-    "video video box-video1 box-video1" 80px
-    "content-video content-video box-video2 box-video2" 80px
-    "content-video content-video box-video3 box-video3" 80px;
-
-    
+    "video video box-video box-video" 80px
+    "content-video content-video box-video box-video" 80px
+    "content-video content-video box-video box-video" 80px;    
 }
-
-h2{
+h1{
     font-size: 14px;
     font-weight: 700;
-    padding: 2px;
-     
+    padding: 2px;     
 }
-p{
-      
+p{      
     font-size: 11px;   
-    padding: 3px;
-          
+    padding: 3px;          
 }
-
 .video{
-    display: grid;
-    grid-area:video;
-           
+    display: grid;       
+    grid-area:video;    
+    margin-top: 9px;           
 }
-
 .content-video{
     display: flex;
     flex-direction: column;
     grid-area: content-video;
-    justify-content: center;
-    align-items: flex-start;
-           
-
+    justify-content: flex-end;      
 }
-
 .propaganda{
     display: flex;
     grid-area:propaganda;
-    justify-content: center;
-                
+    justify-content: center;  
+    align-items: center;  
+    width: 310px;        
 }
-.propaganda p {
-  
-  position: absolute;
-  align-self: center;  
-  transform: translatey(-50% );
-      
+.propaganda p {      
+  position: absolute;         
 }
-
-
-.box-video1{
-    display: flex;
-    flex-wrap: wrap;    
-    flex-direction: column;       
-    grid-area: box-video1;
-   
-}
-
-
-
-.box-video2{
-    display: flex;
+.right{
+    display: flex;   
     flex-wrap: wrap;
-    flex-direction: column;   
-    grid-area: box-video2;    
-   
+    padding:15px ;    
+}   
+.box-video{
+    display: flex;    
+    width: 300px;
+    grid-area: box-video;
+    margin-bottom: 5px;
 }
-
-
-.box-video3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;    
-    grid-area: box-video3;
-   
-}
-
-
 
 @media(max-width: 500px){
-
     .container{
         height: 100%;       
         display: flex;
-        flex-direction: column;
-      
-    }
-
+        flex-direction: column;              
+    }  
     .content-video p{
-        width: 400px;
+        width: 350px;
+        margin: 5px;     
     }
-    .propaganda {
-        
-        align-self: flex-start;
-        
+    .right{
+        padding:10px 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }      
+    .propaganda{              
+        justify-content: flex-start;
     }
     .propaganda p{
-        transform: translateY(0);
-    }
+        margin-left: 100px;
+      }
+  
 }
