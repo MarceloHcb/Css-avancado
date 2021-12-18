@@ -1,11 +1,8 @@
 @media(max-width: 500px){
-
-    .container{
-        display: flex;
-        flex-flow:column wrap;        
-        height: 100%;                             
-        
-        
-      
+    .container{        
+        margin:15px 0;       
+    }
+    .frame{
+        margin: 0;
     }
 }
